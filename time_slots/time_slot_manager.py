@@ -9,8 +9,7 @@ class TimeSlotManager:
     
 
     def add_time_slot(self, time_slot: TimeSlot):
-        if self.is_time_slot_available(time_slot):
-            self.slots.append(time_slot)
+        self.slots.append(time_slot)
 
 
     def is_time_slot_available(self, requested_slot: TimeSlot) -> bool:
